@@ -9,6 +9,7 @@ import SwiftUI
 struct AboutUs: View {
     @State private var earthButton = false
     var body: some View {
+
     
             
             NavigationStack{

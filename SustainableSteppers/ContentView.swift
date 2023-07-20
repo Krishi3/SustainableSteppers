@@ -26,7 +26,9 @@ struct ContentView: View {
                         .foregroundColor(Color(hue: 0.741, saturation: 0.901, brightness: 0.733))
                         .multilineTextAlignment(.center)
                         .padding(.all, 30.0)
+
                     Image("logo2")
+
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .padding(.horizontal, 25.0)

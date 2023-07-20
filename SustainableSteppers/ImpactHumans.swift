@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ImpactHumans: View {
     var body: some View {
+
         ZStack {
             RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
                 .ignoresSafeArea()
