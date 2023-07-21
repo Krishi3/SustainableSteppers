@@ -77,7 +77,7 @@ struct AboutUs: View {
                                 ToolbarItemGroup(placement: .bottomBar) {
                                 
                                     Spacer()
-                  NavigationLink(destination: AboutUs()) {
+                  NavigationLink(destination: ContentView()) {
                       Image("about")
                           .resizable()
                           .frame(width:75,height:75)
@@ -104,7 +104,7 @@ struct AboutUs: View {
                                     Spacer()
 
                                     NavigationLink(destination: dailyChallenges()) {
-                                        Image("score1")
+                                        Image("challenges")
                                             .resizable()
                                             .frame(width:75,height:75)
                                            

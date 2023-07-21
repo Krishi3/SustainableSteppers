@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var funFacts = [
-        "fact1", "fact2", "fact3"]
+        "Recycling one aluminum can save enough energy to power a TV for 3 hours!", "The temperature of the Earth has risen about 1.2°C since the late 19th century due to human-induced global warming.", "Over one million seabirds and 100,000 marine animals die each year due to plastic pollution in the oceans."]
     @State private var randomFact = ""
     @State private var i = 0
     
@@ -55,8 +55,10 @@ struct ContentView: View {
                 .buttonStyle(BorderedProminentButtonStyle())
                 .tint(Color(hue: 0.365, saturation: 0.38, brightness: 0.3))
                 Spacer()
-                Text(randomFact)
+                    Text(randomFact)
+                        .multilineTextAlignment(.center)
                     .padding(.top, 450.0)
+                    .padding(.horizontal, 20.0)
               
                 NavigationLink(destination: AboutUs()) {
                     Text("Click here to begin!")

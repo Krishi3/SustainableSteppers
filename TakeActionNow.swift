@@ -12,6 +12,7 @@ struct TakeActionNow: View {
     @State private var tasksCompleted = ""
     private let scoreManager = ScoreManager()
     @State private var currentScore = 0
+    @State private var currentScoreOne = 0
     
     var body: some View {
         ZStack {
@@ -24,17 +25,16 @@ struct TakeActionNow: View {
                     .foregroundColor(Color(hue: 0.741, saturation: 0.901, brightness: 0.733))
                     .multilineTextAlignment(.center)
                     .padding(.bottom)
-                Text("Click on the link below to find some actions for you to complete to reduce your carbon footprint!")
+                Text("Click on the tree below to find some actions for you to complete to reduce your carbon footprint!")
                     .multilineTextAlignment(.center)
                     .padding([.leading, .bottom, .trailing], 20.0)
                 
-                Link(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=URL@*/URL(string: "https://www.apple.com")!/*@END_MENU_TOKEN@*/) {
+                Link(destination: URL(string:"https://www.conservation.org/quizzes/carbon-footprint-quiz")!) {
                     Text("🌳")
                         .font(.largeTitle)
                         .foregroundColor(Color(hue: 0.09, saturation: 0.916, brightness: 0.657))
                         .padding(.bottom, 40.0)
                 }
-                
                 
                 
                 Text("Submit any tasks completed below to earn points. Check out your daily score on the scoreboard. If it is a daily challenge, state challenge.")
@@ -70,6 +70,7 @@ struct TakeActionNow: View {
                 
                 Button("Done for the day!") {
                     currentScore = 0
+                    scoreManager.saveScore(currentScore)
                 }
                 .font(.title)
                 .buttonStyle(.borderedProminent)

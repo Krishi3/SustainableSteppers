@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-
 struct journal: View {
+    @State private var entry = ""
     var body: some View {
         ZStack {
             RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
@@ -18,12 +18,21 @@ struct journal: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color(hue: 0.741, saturation: 0.901, brightness: 0.733))
                     .multilineTextAlignment(.center)
+                    .padding(.bottom)
                 
+                Text("Reflect on the actions you complete, facts you learned and anything you feel down below!")
                 Spacer()
+               
+                TextField("Start Typing Here...", text: $entry)
+                    .frame(width: 300.0, height: 600.0)
+                    .multilineTextAlignment(.center)
+                    .font(.body)
+                    .border(Color.black)
                 
-                RoundedRectangle(cornerRadius: 30)
-                    .padding(.all)
-                
+//                RoundedRectangle(cornerRadius: 30)
+//                    .foregroundColor(.gray)
+//                    .padding(.all)
+//
             }
         }
     }
