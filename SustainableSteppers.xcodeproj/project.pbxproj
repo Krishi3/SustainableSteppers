@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		869BF56D2A69DBAF00D3DDA0 /* journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF56C2A69DBAF00D3DDA0 /* journal.swift */; };
+		869BF56F2A69E14600D3DDA0 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF56E2A69E14600D3DDA0 /* ScoreManager.swift */; };
+		869BF5752A69EE3F00D3DDA0 /* dailyChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF5742A69EE3F00D3DDA0 /* dailyChallenges.swift */; };
 		86D3DF632A65C4A100ABCEE3 /* SustainableSteppersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */; };
 		86D3DF652A65C4A100ABCEE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DF642A65C4A100ABCEE3 /* ContentView.swift */; };
 		86D3DF672A65C4A200ABCEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D3DF662A65C4A200ABCEE3 /* Assets.xcassets */; };
 		86D3DF6A2A65C4A200ABCEE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D3DF692A65C4A200ABCEE3 /* Preview Assets.xcassets */; };
 		86D703642A6982B900D1A732 /* ImpactHumans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D703632A6982B900D1A732 /* ImpactHumans.swift */; };
+		86D703852A69B6DF00D1A732 /* TakeActionNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D703842A69B6DF00D1A732 /* TakeActionNow.swift */; };
 		86FE8C292A682E16005AC9DF /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FE8C282A682E16005AC9DF /* AboutUs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		869BF56C2A69DBAF00D3DDA0 /* journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journal.swift; sourceTree = "<group>"; };
+		869BF56E2A69E14600D3DDA0 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		869BF5742A69EE3F00D3DDA0 /* dailyChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyChallenges.swift; sourceTree = "<group>"; };
 		86D3DF5F2A65C4A100ABCEE3 /* SustainableSteppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableSteppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainableSteppersApp.swift; sourceTree = "<group>"; };
 		86D3DF642A65C4A100ABCEE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86D3DF662A65C4A200ABCEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86D3DF692A65C4A200ABCEE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		86D703632A6982B900D1A732 /* ImpactHumans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactHumans.swift; sourceTree = "<group>"; };
+		86D703842A69B6DF00D1A732 /* TakeActionNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeActionNow.swift; sourceTree = "<group>"; };
 		86FE8C282A682E16005AC9DF /* AboutUs.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
@@ -39,6 +47,9 @@
 		86D3DF562A65C4A100ABCEE3 = {
 			isa = PBXGroup;
 			children = (
+				86D703842A69B6DF00D1A732 /* TakeActionNow.swift */,
+				869BF5742A69EE3F00D3DDA0 /* dailyChallenges.swift */,
+				869BF56E2A69E14600D3DDA0 /* ScoreManager.swift */,
 				86D3DF612A65C4A100ABCEE3 /* SustainableSteppers */,
 				86D3DF602A65C4A100ABCEE3 /* Products */,
 			);
@@ -58,6 +69,7 @@
 				86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */,
 				86D3DF642A65C4A100ABCEE3 /* ContentView.swift */,
 				86FE8C282A682E16005AC9DF /* AboutUs.swift */,
+				869BF56C2A69DBAF00D3DDA0 /* journal.swift */,
 				86D3DF662A65C4A200ABCEE3 /* Assets.xcassets */,
 				86D703632A6982B900D1A732 /* ImpactHumans.swift */,
 				86D3DF682A65C4A200ABCEE3 /* Preview Content */,
@@ -143,10 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D703852A69B6DF00D1A732 /* TakeActionNow.swift in Sources */,
+				869BF5752A69EE3F00D3DDA0 /* dailyChallenges.swift in Sources */,
+				869BF56D2A69DBAF00D3DDA0 /* journal.swift in Sources */,
 				86FE8C292A682E16005AC9DF /* AboutUs.swift in Sources */,
 				86D3DF652A65C4A100ABCEE3 /* ContentView.swift in Sources */,
 				86D3DF632A65C4A100ABCEE3 /* SustainableSteppersApp.swift in Sources */,
 				86D703642A6982B900D1A732 /* ImpactHumans.swift in Sources */,
+				869BF56F2A69E14600D3DDA0 /* ScoreManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

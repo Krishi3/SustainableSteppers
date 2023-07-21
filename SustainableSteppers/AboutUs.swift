@@ -9,15 +9,11 @@ import SwiftUI
 struct AboutUs: View {
     @State private var earthButton = false
     var body: some View {
-
-    
-            
             NavigationStack{
                 ZStack {
                     RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
                         .ignoresSafeArea()
                     VStack {
-                        
                         Text("About Us")
                             .font(.largeTitle)
                             .fontWeight(.medium)
@@ -35,7 +31,9 @@ struct AboutUs: View {
                             .font(.largeTitle)
                       
                         if earthButton == true {
-                            Text("Information about climate change here.")
+                            Text("According to the Intergovernmental Panel on Climate Change (IPCC), human activities have caused approximately 1.0°C of global warming above pre-industrial levels, primarily due to increased GHG emissions.")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(hue: 0.075, saturation: 0.908, brightness: 0.695))
                                 .multilineTextAlignment(.center)
                                 .padding([.top, .leading, .trailing], 20.0)
                         } else {
@@ -45,28 +43,32 @@ struct AboutUs: View {
                         Spacer()
                         Text("Learn about the impact on...")
                             .fontWeight(.bold)
-                        HStack (spacing: 10){
-                            Image("human")
-                                    .resizable(resizingMode: .stretch)
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.leading, 6.0)
-                            Image("plant")
-                                .resizable(resizingMode: .stretch)
+                        HStack (spacing: 5){
+                            NavigationLink(destination: ImpactHumans()) {
+                                Image("person1")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .padding(.leading, 6.0)
+                                        .frame(width:120,height:120)
+                            }
+                            Image("plant1")
+                                .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .padding(.trailing, 8.0)
-                            Image("animals")
-                                .resizable(capInsets: EdgeInsets(), resizingMode: .stretch)
+                                .padding(.leading, 13.0)
+                                .frame(width:140,height:140)
+                            Image("animal")
+                                .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .padding(.trailing, 15.0)
+                                .padding(.trailing, 18.0)
+                                .frame(width:140,height:140)
                         }
                         HStack {
                             Text("Humans")
-                                .padding(.trailing, 30.0)
+                                .padding(.trailing, 65.0)
                             Text("Plants")
-                                .padding(.horizontal, 30.0)
+                                .padding(.trailing, 83.0)
                             Text("Animals")
-                                .padding(.leading, 30.0)
-                            
+                                .padding(.leading,-8)
                         }
                         
                         Spacer()
@@ -75,28 +77,25 @@ struct AboutUs: View {
                                 ToolbarItemGroup(placement: .bottomBar) {
                                 
                                     Spacer()
-                //                    ToolbarItem(placement:.bottomBar){
-                                        NavigationLink(destination: ContentView()) {
-                                            Image("logo")
-                                                .resizable()
-                                                .frame(width:75,height:75)
-                                        }
-
-                //                    }
+                  NavigationLink(destination: AboutUs()) {
+                      Image("about")
+                          .resizable()
+                          .frame(width:75,height:75)
+                    }
                                     
                                     Spacer()
                                     
-                                    NavigationLink(destination: ContentView()) {
-                                        Image("logo")
+                                    NavigationLink(destination: journal()) {
+                                        Image("journal1")
                                             .resizable()
-                                            .frame(width:75,height:75)
+                                            .frame(width:75,height:105)
                                            
                                     }
                                   
                                     Spacer()
                                     
-                                    NavigationLink(destination: ContentView()) {
-                                        Image("logo")
+                                    NavigationLink(destination: TakeActionNow()) {
+                                        Image("action1")
                                             .resizable()
                                             .frame(width:75,height:75)
                                            
@@ -104,8 +103,8 @@ struct AboutUs: View {
                                   
                                     Spacer()
 
-                                    NavigationLink(destination: ContentView()) {
-                                        Image("logo")
+                                    NavigationLink(destination: dailyChallenges()) {
+                                        Image("score1")
                                             .resizable()
                                             .frame(width:75,height:75)
                                            
@@ -114,14 +113,20 @@ struct AboutUs: View {
                                     Spacer()
                                     
                                 }
-
                             }
+                        
+                        NavigationLink(destination: TakeActionNow()) {
+                            Text("OR TAKE ACTION NOW!!")
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.black)
+                                .padding(.bottom)
+                        }
                     }
                     
-
+                    
                 }
             }
-            }
+        }
             
         
         struct AboutUs_Previews: PreviewProvider {
