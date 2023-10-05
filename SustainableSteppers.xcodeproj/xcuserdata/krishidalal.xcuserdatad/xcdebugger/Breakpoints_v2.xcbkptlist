@@ -14,8 +14,8 @@
             filePath = "SustainableSteppers/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "previews"
             landmarkType = "24">
             <Locations>
@@ -49,6 +49,66 @@
                   endingLineNumber = "76"
                   offsetFromSymbolStart = "72">
                </Location>
+               <Location
+                  uuid = "6FB0CE54-9059-41EF-BB9D-0835A9BEA4A5 - 786edeaeb1ed60ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SustainableSteppers.ContentView_Previews.previews.getter : some"
+                  moduleName = "SustainableSteppers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/krishidalal/Desktop/KWK/SustainableSteppers2/SustainableSteppers/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "6FB0CE54-9059-41EF-BB9D-0835A9BEA4A5 - 786edeaeb1ed609b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SustainableSteppers.ContentView_Previews.previews.getter : some"
+                  moduleName = "SustainableSteppers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/krishidalal/Desktop/KWK/SustainableSteppers2/SustainableSteppers/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "6FB0CE54-9059-41EF-BB9D-0835A9BEA4A5 - 786edeaeb1ed60e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SustainableSteppers.ContentView_Previews.previews.getter : some"
+                  moduleName = "SustainableSteppers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/krishidalal/Desktop/KWK/SustainableSteppers2/SustainableSteppers/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "6FB0CE54-9059-41EF-BB9D-0835A9BEA4A5 - 786edeaeb1ed6327"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static SustainableSteppers.ContentView_Previews.previews.getter : some"
+                  moduleName = "SustainableSteppers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/krishidalal/Desktop/KWK/SustainableSteppers2/SustainableSteppers/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "72">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -62,8 +122,8 @@
             filePath = "SustainableSteppers/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "previews"
             landmarkType = "24">
          </BreakpointContent>

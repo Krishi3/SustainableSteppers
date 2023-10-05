@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct dailyChallenges: View {
+    //sets variables for counter in each array
     @State private var i1 = 0
     @State private var i2 = 0
+    //sets a variable for a challenge
     @State private var challenge = ""
+    //creates an array of challenges for adults
     @State private var dailyChallengesAdults = ["Make a plan for what exactly you want to buy at the grocery store limits the waste outcome.","Choose to buy local and seasonal produce, reducing the carbon footprint associated with transporting food long distances.","Use eco-friendly, reusable bags for grocery shopping to minimize single-use plastic waste."]
-    
+    //creates an array of challenges for children
     @State private var dailyChallengesChildren = ["Walk, bike, or use public transportation instead of driving a car to improve your well-being and reduce your carbon footprint.","Sharing a ride reduces the amount of carbon emitted into the atmosphere.", "Plant a tree or participate in a local tree-planting initiative to help combat climate change."]
     
     var body: some View {
             NavigationStack {
                 ZStack {
+                    //background gradient colour code
                     RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
                         .ignoresSafeArea()
                 VStack(alignment: .center){
                     Text("Daily Challenges")
-                        .font(.largeTitle)
+                        .font(Font.custom("SecularOne-Regular", size:36))
                         .fontWeight(.semibold)
                         .foregroundColor(Color(hue: 0.741, saturation: 0.901, brightness: 0.733))
                         .multilineTextAlignment(.center)
@@ -31,7 +35,7 @@ struct dailyChallenges: View {
                     Text("Click the button below to generate your challenge for today!")
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 10.0)
-                    
+                    //buttont to display an adult challenge
                     Button("Adult Challenge!!") {
                         if i1 != dailyChallengesAdults.count {
                             challenge = dailyChallengesAdults[i1]
@@ -42,8 +46,8 @@ struct dailyChallenges: View {
                     }
                     .padding(.top)
                     .buttonStyle(BorderedProminentButtonStyle())
-                    .tint(.orange)
-                    
+                    .tint(Color(hue: 0.365, saturation: 0.38, brightness: 0.3))
+                    //buttont to display a children's challenge
                     Button("Children Challenge!!") {
                         if i2 != dailyChallengesChildren.count {
                             challenge = dailyChallengesChildren[i2]
@@ -54,10 +58,10 @@ struct dailyChallenges: View {
                     }
                     .padding(.vertical)
                     .buttonStyle(BorderedProminentButtonStyle())
-                    .tint(.orange)
-                    
-                    
+                    .tint(Color(hue: 0.365, saturation: 0.38, brightness: 0.3))
+                    //displays what the challenge is
                     Text(challenge)
+                        .font(Font.custom("ComicNeue-Regular", size:20))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                     
@@ -71,7 +75,7 @@ struct dailyChallenges: View {
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .padding([.leading, .bottom, .trailing])
-                    
+                   //links to take action now page to update tasks completed
                     NavigationLink(destination: TakeActionNow()) {
                         Text("Take Action Now Page")
                             .fontWeight(.heavy)

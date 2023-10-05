@@ -10,6 +10,8 @@
 		869BF56D2A69DBAF00D3DDA0 /* journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF56C2A69DBAF00D3DDA0 /* journal.swift */; };
 		869BF56F2A69E14600D3DDA0 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF56E2A69E14600D3DDA0 /* ScoreManager.swift */; };
 		869BF5752A69EE3F00D3DDA0 /* dailyChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869BF5742A69EE3F00D3DDA0 /* dailyChallenges.swift */; };
+		86C8B0132ACE142200CE6659 /* SecularOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86C8B0122ACE142200CE6659 /* SecularOne-Regular.ttf */; };
+		86C8B01A2ACE1E3900CE6659 /* ComicNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86C8B0192ACE1E3900CE6659 /* ComicNeue-Regular.ttf */; };
 		86D3DF632A65C4A100ABCEE3 /* SustainableSteppersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */; };
 		86D3DF652A65C4A100ABCEE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3DF642A65C4A100ABCEE3 /* ContentView.swift */; };
 		86D3DF672A65C4A200ABCEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D3DF662A65C4A200ABCEE3 /* Assets.xcassets */; };
@@ -23,6 +25,9 @@
 		869BF56C2A69DBAF00D3DDA0 /* journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journal.swift; sourceTree = "<group>"; };
 		869BF56E2A69E14600D3DDA0 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 		869BF5742A69EE3F00D3DDA0 /* dailyChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyChallenges.swift; sourceTree = "<group>"; };
+		86C8B0122ACE142200CE6659 /* SecularOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SecularOne-Regular.ttf"; path = "../../../../../Downloads/Secular_One/SecularOne-Regular.ttf"; sourceTree = "<group>"; };
+		86C8B0142ACE158700CE6659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86C8B0192ACE1E3900CE6659 /* ComicNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Regular.ttf"; sourceTree = "<group>"; };
 		86D3DF5F2A65C4A100ABCEE3 /* SustainableSteppers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SustainableSteppers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainableSteppersApp.swift; sourceTree = "<group>"; };
 		86D3DF642A65C4A100ABCEE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		86D3DF612A65C4A100ABCEE3 /* SustainableSteppers */ = {
 			isa = PBXGroup;
 			children = (
+				86C8B0142ACE158700CE6659 /* Info.plist */,
 				86D3DF622A65C4A100ABCEE3 /* SustainableSteppersApp.swift */,
 				86D3DF642A65C4A100ABCEE3 /* ContentView.swift */,
 				86FE8C282A682E16005AC9DF /* AboutUs.swift */,
@@ -81,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				86D3DF692A65C4A200ABCEE3 /* Preview Assets.xcassets */,
+				86C8B0122ACE142200CE6659 /* SecularOne-Regular.ttf */,
+				86C8B0192ACE1E3900CE6659 /* ComicNeue-Regular.ttf */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -143,6 +151,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C8B01A2ACE1E3900CE6659 /* ComicNeue-Regular.ttf in Resources */,
+				86C8B0132ACE142200CE6659 /* SecularOne-Regular.ttf in Resources */,
 				86D3DF6A2A65C4A200ABCEE3 /* Preview Assets.xcassets in Resources */,
 				86D3DF672A65C4A200ABCEE3 /* Assets.xcassets in Resources */,
 			);
@@ -293,6 +303,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SustainableSteppers/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SustainableSteppers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +332,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SustainableSteppers/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SustainableSteppers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

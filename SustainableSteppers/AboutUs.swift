@@ -7,15 +7,17 @@
 import SwiftUI
 
 struct AboutUs: View {
+    //create a variable set as a boolean for the earth button
     @State private var earthButton = false
     var body: some View {
             NavigationStack{
+                //page layout + design code
                 ZStack {
                     RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
                         .ignoresSafeArea()
                     VStack {
                         Text("About Us")
-                            .font(.largeTitle)
+                            .font(.custom("SecularOne-Regular", size:46))
                             .fontWeight(.medium)
                             .foregroundColor(Color(hue: 0.741, saturation: 0.901, brightness: 0.733))                    .multilineTextAlignment(.center)
                             .padding(.bottom)
@@ -26,62 +28,64 @@ struct AboutUs: View {
                             .padding(.bottom, 5.0)
                        
                         Button("🌍") {
+                            //allows one to open and close text that appears with button
                             earthButton.toggle()
                         }
                             .font(.largeTitle)
-                      
+                      //if the button is set to true, it will display the text
                         if earthButton == true {
                             Text("According to the Intergovernmental Panel on Climate Change (IPCC), human activities have caused approximately 1.0°C of global warming above pre-industrial levels, primarily due to increased GHG emissions.")
+                                .font(Font.custom("ComicNeue-Regular", size:20))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.075, saturation: 0.908, brightness: 0.695))
                                 .multilineTextAlignment(.center)
                                 .padding([.top, .leading, .trailing], 20.0)
                         } else {
-                            
                         }
-                        
+
                         Spacer()
                         Text("Learn about the impact on...")
                             .fontWeight(.bold)
+                        //arranges the images in a row format
                         HStack (spacing: 5){
+                            //links to the human impact page
                             NavigationLink(destination: ImpactHumans()) {
+                                Image("climateChange2")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width:120,height:120)
+                                        .padding(.leading, -60.0)
+                                        .padding(.trailing, -100.0)
                                 Image("person1")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
-                                        .padding(.leading, 6.0)
+                                        .padding(.trailing, -2000)
                                         .frame(width:120,height:120)
                             }
-                            Image("plant1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.leading, 13.0)
-                                .frame(width:140,height:140)
-                            Image("animal")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.trailing, 18.0)
-                                .frame(width:140,height:140)
+                            Image("climateChange")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.trailing, -90.0)
+                                    .frame(width:100,height:120)
+    
                         }
                         HStack {
                             Text("Humans")
-                                .padding(.trailing, 65.0)
-                            Text("Plants")
-                                .padding(.trailing, 83.0)
-                            Text("Animals")
-                                .padding(.leading,-8)
+                                .padding(.trailing, 1.0)
                         }
                         
                         Spacer()
-                        
+                        //creates a navigation tool bar to access various pages of the app
                             .toolbar {
                                 ToolbarItemGroup(placement: .bottomBar) {
                                 
                                     Spacer()
-                  NavigationLink(destination: ContentView()) {
-                      Image("about")
-                          .resizable()
-                          .frame(width:75,height:75)
-                    }
+                                    NavigationLink(destination: ContentView()) {
+                                        Image("about")
+                                            .resizable()
+                                            .frame(width:75,height:75)
+                                        
+                                    }
                                     
                                     Spacer()
                                     
@@ -136,4 +140,5 @@ struct AboutUs: View {
         }
                 }
                 
+
 
