@@ -12,9 +12,11 @@ struct AboutUs: View {
     var body: some View {
             NavigationStack{
                 //page layout + design code
+                //zstack is for depth stacking (multiple layers)
                 ZStack {
                     RadialGradient(colors: [Color.accentColor, Color.green] , center: .center, startRadius: 200, endRadius: 400)
                         .ignoresSafeArea()
+                    //vstack is to align items vertically
                     VStack {
                         Text("About Us")
                             .font(.custom("SecularOne-Regular", size:46))
@@ -69,6 +71,7 @@ struct AboutUs: View {
                                     .frame(width:100,height:120)
     
                         }
+                        //hstack is to align things horizontally
                         HStack {
                             Text("Humans")
                                 .padding(.trailing, 1.0)
@@ -81,6 +84,7 @@ struct AboutUs: View {
                                 
                                     Spacer()
                                     NavigationLink(destination: ContentView()) {
+                                        //the image is the displayed item as the navigation link
                                         Image("about")
                                             .resizable()
                                             .frame(width:75,height:75)

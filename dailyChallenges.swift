@@ -37,6 +37,7 @@ struct dailyChallenges: View {
                         .padding(.horizontal, 10.0)
                     //buttont to display an adult challenge
                     Button("Adult Challenge!!") {
+                        //if the total number of challenges in the array is not reached, new challenges will appear each time the button is clicked
                         if i1 != dailyChallengesAdults.count {
                             challenge = dailyChallengesAdults[i1]
                             i1+=1
@@ -47,8 +48,9 @@ struct dailyChallenges: View {
                     .padding(.top)
                     .buttonStyle(BorderedProminentButtonStyle())
                     .tint(Color(hue: 0.365, saturation: 0.38, brightness: 0.3))
-                    //buttont to display a children's challenge
+                    //button to display a children's challenge
                     Button("Children Challenge!!") {
+                        //if the total number of challenges in the array is not reached, new challenges will appear each time the button is clicked
                         if i2 != dailyChallengesChildren.count {
                             challenge = dailyChallengesChildren[i2]
                             i2+=1
@@ -77,6 +79,7 @@ struct dailyChallenges: View {
                         .padding([.leading, .bottom, .trailing])
                    //links to take action now page to update tasks completed
                     NavigationLink(destination: TakeActionNow()) {
+                        //text that displays on the navigation link
                         Text("Take Action Now Page")
                             .fontWeight(.heavy)
                             .foregroundColor(Color(hue: 0.074, saturation: 0.823, brightness: 0.484))
